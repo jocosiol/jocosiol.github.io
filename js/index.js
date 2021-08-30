@@ -20,10 +20,23 @@ document.getElementById("searchButton").onclick = function () {
 
   document.getElementById("loading").style.display = "flex";
 
-  fetch(url)
-    .then((response) => response.json())
+  fetch(url) //asynchronous function, return a promeses, promes is a placeholder for a value that does not jet exist.
+    .then((response) => response.json()) //json is the format of the internet. (is just a string).
     .then((data) => {
       for (i = 0; i <= all; i++) {
+        // const bodyWrapper = document.createElement("div");
+        // bodyWrapper.classList.add("body-wrapper");
+
+        // const list = document.createElement("div");
+        // list.id = `stocks${i}`;
+
+        // const atag = document.createElement("a");
+        // atag.id = `link${i}`;
+        //
+        // atag.append(list);
+        // bodyWrapper.append(atag);
+        // document.body.append(bodyWrapper);
+
         //!cleaning last searchs.
         document.getElementById(`stocks${i}`).innerHTML = "";
         document.getElementById(`link${i}`).href = "";
@@ -39,7 +52,7 @@ document.getElementById("searchButton").onclick = function () {
 
         document.getElementById(
           `link${i}`
-        ).href = ` /company.html?symbol=${data[i]["symbol"]}`;
+        ).href = `./company.html?symbol=${data[i]["symbol"]}`;
 
         document.getElementById(`stocks${i}`).className = "acciones";
 
