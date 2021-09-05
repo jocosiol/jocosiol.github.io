@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/Stock Exchange-logos.jpeg"/>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Stock Exchange</title>
   </head>
@@ -12,7 +13,10 @@
       <img id="loading-image" src="./img/loading.gif" alt="Loading..." />
     </div>
     <div id="wrapper" class="wrapper">
-      <div class="top-bar">
+      <div id="marquee" class="marquee">
+        <p id="marqueeP"> Marquee in CSS </p>
+    </div>
+          <div class="top-bar">
         <div class="top-left">
           <a href="./index.html">
             <img
@@ -35,19 +39,9 @@
         <div class="top-right"></div>
       </div>
       <div class="divider"></div>
-      <div class="body-wrapper">
-        <a id="link0" href=""><div id="stocks0" class=""></div></a>
-        <a id="link1" href=""><div id="stocks1" class=""></div></a>
-        <a id="link2" href=""><div id="stocks2" class=""></div></a>
-        <a id="link3" href=""><div id="stocks3" class=""></div></a>
-        <a id="link4" href=""><div id="stocks4" class=""></div></a>
-        <a id="link5" href=""><div id="stocks5" class=""></div></a>
-        <a id="link6" href=""><div id="stocks6" class=""></div></a>
-        <a id="link7" href=""><div id="stocks7" class=""></div></a>
-        <a id="link8" href=""><div id="stocks8" class=""></div></a>
-        <a id="link9" href=""><div id="stocks9" class=""></div></a>
-      </div>
+      <div class="body-wrapper" id="bodyWrapper"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
