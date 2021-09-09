@@ -192,7 +192,6 @@ a:hover {
   animation: scroll-left 50s linear infinite;
 }
 
-
 @keyframes scroll-left {
   0% {
       -moz-transform: translateX(100%);
@@ -204,4 +203,8 @@ a:hover {
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
   }
+}
+
+.hightlight {
+  background-color: yellow;
 }

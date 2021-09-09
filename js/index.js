@@ -105,10 +105,14 @@ document.getElementById("searchButton").onclick = function () {
                 fixedChanges = dataB["profile"]["changes"].toFixed(2);
               }
 
+              
+              let newDataName = data[i]["name"].replaceAll(new RegExp(stackInput, "ig"), `<span class="hightlight">${stackInput}</span>`);
+              let newDataSymbol = data[i]["symbol"].replaceAll(new RegExp(stackInput, "ig"), `<span class="hightlight">${stackInput.toUpperCase()}</span>`);
+              
               document.getElementById(`stocks${i}`).innerHTML =
-                data[i]["name"] +
+              newDataName +
                 " (" +
-                data[i]["symbol"] +
+                newDataSymbol +
                 ") (" +
                 fixedChanges +
                 "%)";
