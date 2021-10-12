@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   padding: 40px 40px 40px 40px;
+  flex-grow: 10;
 }
 .left {
   background-color: #f1faee;
@@ -104,13 +105,15 @@ a {
   line-height: 1.6;
 }
 .content {
+  background-color: #f1faee;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .info_wrapper {
   background-color: #f1faee;
-  padding: 2rem;
+  padding: 0rem 2rem 2rem 2rem;
 }
 p {
   background-color: #f1faee;
@@ -142,4 +145,35 @@ p {
   margin: 1rem 0;
   padding: 4px;
   border-radius: 5px;
+}
+.form_row {
+  background-color: #f1faee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.form_label {
+  background-color: #f1faee;
+  margin-right: 1rem;
+}
+.form-wrapper {
+  background-color: #f1faee;
+}
+.form_input {
+  background-color: #f1faee;
+}
+.calendar {
+  height: 350px;
+  width: 350px;
+  background-color: #1d3557;
+  margin-top: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  background-color: #f1faee;
+  margin-top: 0;
 }
