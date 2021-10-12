@@ -4,44 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./img/Stock Exchange-logos.jpeg"/>
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Stock Exchange</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Moshe Cosio</title>
   </head>
   <body>
-    <div id="loading">
-      <img id="loading-image" src="./img/loading.gif" alt="Loading..." />
-    </div>
-    <div id="wrapper" class="wrapper">
-      <div id="marquee" class="marquee">
-        <p id="marqueeP"></p>
-    </div>
-          <div class="top-bar">
-        <div class="top-left">
-          <a href="./index.html">
-            <img
-              class="imagen"
-              src="./img/Stock Exchange-logos_transparent.png"
-              alt="logo"
-          /></a>
-        </div>
-        <div class="search-bar">
-          <div class="search-bar-and-button">
-            <input
-              id="inputText"
-              class="input-search"
-              type="text"
-              placeholder="What stock are you looking for?"
-            />
-            <button id="searchButton" class="search-button">Search</button>
+    <div class="container">
+      <div class="wrapper">
+        <div class="info">
+          <div class="nav_bar">
+            <div class="nav_home"><a class="nav" href="../index.html">Home</a></div>
+            <div class="nav_about"><a class="nav" href="../html/about.html">About</a></div>
+            <div class="nav_contact">Contact</div>
+          </div>
+          <div class="content">
+          <div class="left">
+            <img class="img_profile" id="profilePicture" src="" alt="profile_picture" />        
+          <div class="social">
+            <a href="https://www.linkedin.com/in/moshe-cosio-5374bb33/"><img class="logo" src="./img/linkedin-icon-2.svg" alt="linkedin_logo"></a>
+            <a href="https://github.com/jocosiol/"><img class="logo" src="./img/github-icon-1.svg" alt="github_logo"></a>
+            <a href="https://stackoverflow.com/users/4821217/mcosio"><img class="logo" src="./img/stack-overflow.svg" alt="stackoverflow_logo"></a>
+          </div>
+          
+          </div>   
+            <div class="right">
+              <div class="tag">
+                <span class="highlite">Software Engineer</span>
+              </div>
+              <div class="name_title">Moshe Cosio</div>
+              <div class="description">
+                Working for 8+ years in a small engineering company gave me the
+                chance to explore and develop very different features of a small
+                business. From outstanding teamwork to project management,
+                customer service, and some aspects of finance. I'm always
+                curious and eager to learn. I enjoy finding better solutions to
+                everyday life and I love how technology can improve it.
+              </div>
+
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="wrapper video">
+            <video width="70%" controls>
+              <source src="./img/VID-20181101-WA0029.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
-        <div class="top-right"></div>
       </div>
-      <div class="divider"></div>
-      <div class="body-wrapper" id="bodyWrapper"></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
