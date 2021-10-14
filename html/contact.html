@@ -26,47 +26,58 @@
 
                         <div class="form_row">
                             <div class="form_label">First Name:</div>
-                            <div><input class="form_input" type="text"></div>
+                            <div><input class="form_input" type="text" id="firstName" onkeyup="success()"></div>
                         </div>
                         <div class="form_row">
                             <div class="form_label">Last Name:</div>
-                            <div><input class="form_input" type="text"></div>
+                            <div><input class="form_input" type="text" id="lastName" onkeyup="success()"></div>
                         </div>
                         <div class="form_row">
                             <div class="form_label">Email:</div>
-                            <div><input class="form_input" type="text"></div>
+                            <div><input class="form_input" type="text" id="email" onkeyup="success()"></div>
                         </div>
                         <div class="form_row">
                             <div class="form_label">Phone number:</div>
-                            <div><input class="form_input" type="number"></div>
+                            <div><input class="form_input" type="number" id="phone" onkeyup="success()"></div>
                         </div>
                         <div class="form_row">
                             <div class="form_label">Meeting's date:</div>
-                            <div><input class="form_input" type="date"></div>
+                            <div><input class="form_input" type="date" id="date" onkeyup="success()"></div>
                         </div>
                         <div class="form_row">
-                            <textarea class="form_input" rows="8" cols="40">Add something if you want...</textarea>
+                            <textarea class="form_input" rows="8" cols="40" id="message" placeholder="Add something if you want..." onkeyup="success()"></textarea>
                         </div>
                         <div class="form_row">
-                            <div class="submit disable">Submit</div>
-                            <div class="button modal">Calendar</div>
+                            <div class="submit disable" id="submitBtn" onClick="addModal()">Submit</div>
+                            <div id="myBtn" class="button modals">Calendar</div>
                         </div>
 
 
+                        <div id="myModal" class="modal">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2 class="normal_color">Meetings</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p id="calMessage"></p>
+                                </div>
+                                <div class="modal-footer">
+                                <h3 class="normal_color"></h3>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="calendar">
-
-
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
     </div>
-    </div>
 
-    <script src="../js/about.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 
 </html>
